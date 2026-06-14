@@ -3,7 +3,7 @@ const asyncHandler = require('express-async-handler')
 const ApiError = require('../utils/ApiError')
 const User = require('../models/User')
 
-const protect = asyncHandler(async (req, resizeBy, next) => {
+const protect = asyncHandler(async (req, res, next) => {
     let token = req.headers.authorization
 
     if(token && token.startsWith("Bearer")) {
