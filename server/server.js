@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const connectionDb = require('./config/db');
+const connectionDb = require('./config/connectionDb');
 const authRoutes = require('./routes/authRoutes');
 const portfolioRoutes = require('./routes/portfolioRoutes');
 const { errorHandler, notFound } = require('./middleware/errorMiddleware');
