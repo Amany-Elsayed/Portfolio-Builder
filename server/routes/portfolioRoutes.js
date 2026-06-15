@@ -1,6 +1,7 @@
 const express = require('express')
 const { createOrUpdateProtfolio, getMyPortfolio, getPublicPortfolio, uploadProfileImage, uploadProjectImages } = require('../controllers/portfolioController')
 const { protect } = require('../middleware/authMiddleware')
+const upload = require("../middleware/uploadMiddleware")
 
 const router = express.Router()
 
