@@ -7,6 +7,7 @@ const portfolioRoutes = require('./routes/portfolioRoutes');
 const { errorHandler, notFound } = require('./middleware/errorMiddleware');
 
 dotenv.config()
+
 connectionDb()
 
 const app = express()
