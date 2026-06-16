@@ -111,6 +111,4 @@ const uploadProjectImages = asyncHandler(async (req, res) => {
     })
 })
 
-
-
 module.exports = { createOrUpdateProtfolio, getMyPortfolio, getPublicPortfolio, uploadProfileImage, uploadProjectImages }
