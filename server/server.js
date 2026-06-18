@@ -1,23 +1,23 @@
-require('dotenv').config()
+require("dotenv").config();
 
-const express = require('express');
-const cors = require('cors');
-const connectionDb = require('./config/connectionDb');
-const authRoutes = require('./routes/authRoutes');
-const portfolioRoutes = require('./routes/portfolioRoutes');
-const { errorHandler, notFound } = require('./middleware/errorMiddleware');
+const express = require("express");
+const cors = require("cors");
+const connectionDb = require("./config/connectionDb");
+const authRoutes = require("./routes/authRoutes");
+const portfolioRoutes = require("./routes/portfolioRoutes");
+const { errorHandler, notFound } = require("./middleware/errorMiddleware");
 
-connectionDb()
+connectionDb();
 
-const app = express()
-app.use(cors())
-app.use(express.json())
+const app = express();
+app.use(cors());
+app.use(express.json());
 
-app.use('/api/auth', authRoutes)
-app.use('/api/portfolio', portfolioRoutes)
+app.use("/api/auth", authRoutes);
+app.use("/api/portfolio", portfolioRoutes);
 
-app.use(notFound)
-app.use(errorHandler)
+app.use(notFound);
+app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
