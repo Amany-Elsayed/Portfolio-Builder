@@ -119,4 +119,4 @@ Authorization: Bearer <your_token>
 
 ## Author
 Amany Elsayed  
-Junior MEAN Stack Developer
+Junior MEARN Stack Developer
