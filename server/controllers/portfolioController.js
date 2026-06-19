@@ -4,7 +4,7 @@ const Portfolio = require("../models/Portfolio");
 const uploadToCloudinary = require("../utils/uploadToCloudinary");
 const User = require("../models/User");
 
-const createOrUpdateProtfolio = asyncHandler(async (req, res) => {
+const createOrUpdatePortfolio = asyncHandler(async (req, res) => {
   const existingPortfolio = await Portfolio.findOne({
     user: req.user._id,
   });
@@ -83,11 +83,6 @@ const uploadProfileImage = asyncHandler(async (req, res) => {
   res.status(200).json({
     message: "Profile image uploaded successfully",
     profileImage: result.secure_url,
-  });
-
-  res.status(200).json({
-    message: "Profile image uploaded successfully",
-    profileImage: req.file.path,
   });
 });
 
