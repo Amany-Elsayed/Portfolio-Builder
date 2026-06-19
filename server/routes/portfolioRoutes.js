@@ -1,6 +1,6 @@
 const express = require("express");
 const {
-  createOrUpdateProtfolio,
+  createOrUpdatePortfolio,
   getMyPortfolio,
   getPublicPortfolio,
   uploadProfileImage,
@@ -13,8 +13,8 @@ const router = express.Router();
 
 router
   .route("/")
-  .post(protect, createOrUpdateProtfolio)
-  .put(protect, createOrUpdateProtfolio);
+  .post(protect, createOrUpdatePortfolio)
+  .put(protect, createOrUpdatePortfolio);
 router.post(
   "/upload-profile-image",
   protect,
