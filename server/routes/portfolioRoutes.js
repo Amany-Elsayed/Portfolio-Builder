@@ -10,7 +10,6 @@ const { protect } = require("../middleware/authMiddleware");
 const upload = require("../middleware/uploadMiddleware");
 
 
-
 const router = express.Router();
 
 router
