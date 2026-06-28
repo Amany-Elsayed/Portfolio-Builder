@@ -23,7 +23,6 @@ function App() {
         </div>
 
 
-
         <button
           type="button"
           className="counter"
