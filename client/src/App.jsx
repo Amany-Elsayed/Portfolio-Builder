@@ -21,8 +21,6 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-
-
         <button
           type="button"
           className="counter"
