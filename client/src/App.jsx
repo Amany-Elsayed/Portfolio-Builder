@@ -29,7 +29,6 @@ function App() {
 
 
 
-        
         <button
           type="button"
           className="counter"
