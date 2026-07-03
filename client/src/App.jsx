@@ -31,8 +31,6 @@ function App() {
 
 
 
-
-
           Count is {count}
         </button>
       </section>
