@@ -45,8 +45,6 @@ function App() {
                 <img className="logo" src={viteLogo} alt="" />
                 Explore Vite
               </a>
-
-
             </li>
             <li>
               <a href="https://react.dev/" target="_blank">
