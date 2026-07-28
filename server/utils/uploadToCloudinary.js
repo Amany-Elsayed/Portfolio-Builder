@@ -22,8 +22,6 @@ const uploadToCloudinary = (buffer, folder = "portfolio") => {
 
 
 
-    
-
     streamifier.createReadStream(buffer).pipe(stream);
   });
 };
